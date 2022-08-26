@@ -159,6 +159,13 @@ wrap_clipboard_widgets paste \
 
 unfunction wrap_clipboard_widgets
 
+# Up/down search history
+bindkey '\C-j' up-line-or-beginning-search
+bindkey '\C-k' down-line-or-beginning-search
+
+# Map jk to exit insert mode
+bindkey jk vi-cmd-mode
+
 # if mode indicator wasn't setup by theme, define default, we'll leave INSERT_MODE_INDICATOR empty by default
 if [[ -z "$MODE_INDICATOR" ]]; then
   MODE_INDICATOR='%B%F{red}<%b<<%f'
