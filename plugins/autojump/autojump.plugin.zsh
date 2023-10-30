@@ -13,6 +13,7 @@ autojump_paths=(
   /usr/local/etc/profile.d/autojump.sh                   # macOS with Homebrew (default)
   /opt/homebrew/etc/profile.d/autojump.sh                # macOS with Homebrew (default on M1 macs)
   /etc/profiles/per-user/$USER/etc/profile.d/autojump.sh # macOS Nix, Home Manager and flakes
+  $HOME/homebrew/share/autojump/autojump.zsh             # Hack to fix the "autojump not install issue"
 )
 
 for file in $autojump_paths; do
