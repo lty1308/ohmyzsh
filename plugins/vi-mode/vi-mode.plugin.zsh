@@ -165,6 +165,7 @@ bindkey '\C-k' down-line-or-beginning-search
 
 # Map jk to exit insert mode
 bindkey jk vi-cmd-mode
+ZVM_VI_ESCAPE_BINDKEY=jk
 
 # if mode indicator wasn't setup by theme, define default, we'll leave INSERT_MODE_INDICATOR empty by default
 if [[ -z "$MODE_INDICATOR" ]]; then
